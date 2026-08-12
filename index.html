@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop Amigo Fiel | Banho, Tosa e Carinho</title>
+    <!-- Vinculando o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="logo">🐾 Amigo Fiel</div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#agendar">Agendar</a>
+        </nav>
+    </header>
+
+    <!-- BANNER PRINCIPAL (HERO) -->
+    <section class="hero" id="inicio">
+        <div class="hero-text">
+            <h1>O cuidado e o carinho que o seu melhor amigo merece.</h1>
+            <p>Banho, tosa, veterinário e mimos especiais em um só lugar. Contamos com profissionais apaixonados e preparados para receber o seu pet.</p>
+            <a href="#agendar" class="btn">Agendar Horário Online</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://unsplash.com" alt="Cachorro feliz tomando banho no petshop">
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE SERVIÇOS -->
+    <section class="servicos" id="servicos">
+        <h2>Nossos Serviços Especializados</h2>
+        <p class="subtitulo">Garantimos o bem-estar e a felicidade do seu companheiro de quatro patas</p>
+        
+        <div class="cards-container">
+            <div class="card">
+                <span class="icon">🧼</span>
+                <h3>Banho e Tosa</h3>
+                <p>Produtos hipoalergênicos premium, corte de unhas incluso e secagem cuidadosa em ambiente climatizado.</p>
+            </div>
+
+            <div class="card">
+                <span class="icon">🩺</span>
+                <h3>Atendimento Vet</h3>
+                <p>Consultas de rotina, aplicação de vacinas importadas e acompanhamento preventivo completo.</p>
+            </div>
+
+            <div class="card">
+                <span class="icon">🧸</span>
+                <h3>Lojinha Exclusiva</h3>
+                <p>As melhores marcas de rações, petiscos saudáveis, caminhas confortáveis e brinquedos interativos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE AGENDAMENTO INTERATIVO -->
+    <section class="agendamento" id="agendar">
+        <h2>Simule seu Agendamento</h2>
+        <div class="form-grupo">
+            <input type="text" id="nomePet" placeholder="Nome do seu Pet (ex: Mel)">
+            <select id="servicoSelecionado">
+                <option value="">Selecione o serviço...</option>
+                <option value="Banho e Tosa">Banho e Tosa</option>
+                <option value="Consulta Veterinária">Consulta Veterinária</option>
+                <option value="Apenas Banho">Apenas Banho</option>
+            </select>
+            <button class="btn" onclick="enviarAgendamento()">Solicitar pelo WhatsApp</button>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>&copy; 2026 PetShop Amigo Fiel. Todos os direitos reservados. 🐶🐱</p>
+    </footer>
+
+    <!-- Vinculando o arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
